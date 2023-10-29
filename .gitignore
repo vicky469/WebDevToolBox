@@ -1,15 +1,21 @@
-*.suo
-*.user
-_ReSharper.*
-bin
-obj
-packages
-
-# JetBrains Rider IDE specific
-.idea/*
-
 # macOS system files
 .DS_Store
 
-# JetBrains dotSettings file
-*.DotSettings
+# Git ignore file itself
+.gitignore
+
+# Specific solution files and user settings
+*.sln
+*.sln.DotSettings.user
+
+# Markdown files
+*.md
+
+# Global configuration file
+global.json
+
+# JetBrains Rider IDE specific files
+.idea/*
+
+# Build output directory
+**/bin/Debug/net6.0/*
