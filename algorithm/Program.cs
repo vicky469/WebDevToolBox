@@ -1,6 +1,9 @@
-namespace ConsoleApp1;
+namespace LeetCode;
 
 public class Program
 {
-    
+    public string Hello()
+    {
+        return "hi";
+    }
 }

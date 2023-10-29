@@ -101,6 +101,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
             }
           },
           "imports": [

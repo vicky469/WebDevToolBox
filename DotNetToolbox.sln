@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformAPI", "src\Transfo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumAPI", "src\MinimumAPI\MinimumAPI.csproj", "{54A53A7C-42D9-4403-A909-9AA56F3D3139}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "algorithm", "algorithm\algorithm.csproj", "{A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{54A53A7C-42D9-4403-A909-9AA56F3D3139}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54A53A7C-42D9-4403-A909-9AA56F3D3139}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54A53A7C-42D9-4403-A909-9AA56F3D3139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

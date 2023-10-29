@@ -6,10 +6,13 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>ConsoleApp1</RootNamespace>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="test\" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
+      <PackageReference Include="xunit" Version="2.5.3" />
     </ItemGroup>
 
 </Project>
