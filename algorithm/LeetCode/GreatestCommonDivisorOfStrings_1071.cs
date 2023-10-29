@@ -1,11 +1,10 @@
 using System.Text;
 
 namespace LeetCode;
-
+// https://leetcode.com/problems/greatest-common-divisor-of-strings/
 public class GreatestCommonDivisorOfStrings_1071
 {
-    // we assume str2 is always shorter than str1
-    // otherwise this program will not work correctly because gcd(int a, int b)
+    // it does not mather whether str1 is longer or str2
     private static string GcdOfStrings(string str1, string str2)
     {
         // O(n)
@@ -27,6 +26,14 @@ public class GreatestCommonDivisorOfStrings_1071
             b = tmp;
         }
         return a;
+    }
+    
+    // recursion gcd
+    static int GcdRecursion(int a, int b)
+    {
+        if (b == 0)
+            return a;
+        return GcdRecursion(b, a % b);
     }
 
     static bool IsDivisibleStr(string str, string pattern)
@@ -54,6 +61,7 @@ public class GreatestCommonDivisorOfStrings_1071
     [Theory]
     [InlineData("ABCABC", "ABC", "ABC")]
     [InlineData("ABABAB", "ABAB", "ABAB")]
+    [InlineData("ABAB", "ABABABAB", "ABAB")]
     public void Test_OK(string str1, string str2, string expectedResult)
     {
         var result = GcdOfStrings(str1, str2);
@@ -70,7 +78,7 @@ public class GreatestCommonDivisorOfStrings_1071
     }
     
     [Theory]
-    [InlineData("ABAB", "ABABAB", "AB")]
+    [InlineData("ABAB", "ABABABAB", "ABAB")]
     public void Test_Experiment_Fail(string str1, string str2, string expectedResult)
     {
         var result = GcdOfStrings(str1, str2);
