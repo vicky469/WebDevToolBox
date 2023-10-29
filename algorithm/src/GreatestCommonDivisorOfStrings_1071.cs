@@ -1,10 +1,13 @@
 using System.Text;
 
 namespace LeetCode;
-// https://leetcode.com/problems/greatest-common-divisor-of-strings/
+
+/**
+ * https://leetcode.com/problems/greatest-common-divisor-of-strings/
+ * the input order doesn't mather, see: Test_Experiment_OK
+ */
 public class GreatestCommonDivisorOfStrings_1071
 {
-    // it does not mather whether str1 is longer or str2
     private static string GcdOfStrings(string str1, string str2)
     {
         // O(n)
@@ -28,7 +31,7 @@ public class GreatestCommonDivisorOfStrings_1071
         return a;
     }
     
-    // recursion gcd
+    // recursion
     static int GcdRecursion(int a, int b)
     {
         if (b == 0)
@@ -52,7 +55,15 @@ public class GreatestCommonDivisorOfStrings_1071
     
     [Theory]
     [InlineData("ABABAB", "ABAB", "AB")]
-    public void Test_Debug(string str1, string str2, string expectedResult)
+    private void Test_Debug_OK(string str1, string str2, string expectedResult)
+    {
+        var result = GcdOfStrings(str1, str2);
+        Assert.Equal(expectedResult, result);
+    }
+    
+    [Theory]
+    [InlineData("ABAB", "ABABABAB", "ABAB")]
+    private void Test_Experiment_OK(string str1, string str2, string expectedResult)
     {
         var result = GcdOfStrings(str1, str2);
         Assert.Equal(expectedResult, result);
@@ -61,8 +72,8 @@ public class GreatestCommonDivisorOfStrings_1071
     [Theory]
     [InlineData("ABCABC", "ABC", "ABC")]
     [InlineData("ABABAB", "ABAB", "AB")]
-    [InlineData("ABAB", "ABABABAB", "ABAB")] // str2 is longer than str1
-    public void Test_OK(string str1, string str2, string expectedResult)
+    [InlineData("ABAB", "ABABABAB", "ABAB")]
+    private void Test_OK(string str1, string str2, string expectedResult)
     {
         var result = GcdOfStrings(str1, str2);
         Assert.Equal(expectedResult, result);
@@ -71,15 +82,7 @@ public class GreatestCommonDivisorOfStrings_1071
     [Theory]
     [InlineData("ABA", "ABABAB", "")]
     [InlineData("ABCABC", "ABCA", "")]
-    public void Test_Fail(string str1, string str2, string expectedResult)
-    {
-        var result = GcdOfStrings(str1, str2);
-        Assert.Equal(expectedResult, result);
-    }
-    
-    [Theory]
-    [InlineData("ABAB", "ABABABAB", "ABAB")]
-    public void Test_Experiment_Fail(string str1, string str2, string expectedResult)
+    private void Test_Fail(string str1, string str2, string expectedResult)
     {
         var result = GcdOfStrings(str1, str2);
         Assert.Equal(expectedResult, result);
