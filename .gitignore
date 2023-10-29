@@ -4,3 +4,12 @@ _ReSharper.*
 bin
 obj
 packages
+
+# JetBrains Rider IDE specific
+.idea/*
+
+# macOS system files
+.DS_Store
+
+# JetBrains dotSettings file
+*.DotSettings

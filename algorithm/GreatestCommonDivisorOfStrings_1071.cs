@@ -51,7 +51,7 @@ public class GreatestCommonDivisorOfStrings_1071
     
     
     [Theory]
-    [InlineData("ABABAB", "ABAB", "ABAB")]
+    [InlineData("ABABAB", "ABAB", "AB")]
     public void Test_Debug(string str1, string str2, string expectedResult)
     {
         var result = GcdOfStrings(str1, str2);
@@ -60,8 +60,8 @@ public class GreatestCommonDivisorOfStrings_1071
     
     [Theory]
     [InlineData("ABCABC", "ABC", "ABC")]
-    [InlineData("ABABAB", "ABAB", "ABAB")]
-    [InlineData("ABAB", "ABABABAB", "ABAB")]
+    [InlineData("ABABAB", "ABAB", "AB")]
+    [InlineData("ABAB", "ABABABAB", "ABAB")] // str2 is longer than str1
     public void Test_OK(string str1, string str2, string expectedResult)
     {
         var result = GcdOfStrings(str1, str2);
