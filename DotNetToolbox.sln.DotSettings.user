@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6a16ce5d_002D7ece_002D4050_002Dad90_002De8bde1066c10/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.GreatestCommonDivisorOfStrings_1071.Test1&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=da144037_002D0bd5_002D4165_002Db8dc_002D3ebf88c79f9f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.GreatestCommonDivisorOfStrings_1071.Test1&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
