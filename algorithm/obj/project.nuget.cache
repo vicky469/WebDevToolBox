@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7eD/sCSswDcL9mmB3VWfYeEgp6nPIPCddSmmdPBAIJxdAh+TjbaHWwG9FUuGRE7IyCCa4wyuMziaoP4SAmvTzw==",
+  "dgSpecHash": "+8zFeYZdvLaQwqmt1DY2DjDP76KV4F+a73YGK5eo4PYYGe7+0XDqfzaj7DOV0Wj9RKMG1PG9+sI/QalFA3sxeQ==",
   "success": true,
-  "projectFilePath": "/Users/wenqingli/Library/Mobile Documents/com~apple~CloudDocs/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj",
+  "projectFilePath": "/Users/wenqingli/RiderProjects/DotNetToolBox/algorithm/algorithm.csproj",
   "expectedPackageFiles": [
     "/Users/wenqingli/.nuget/packages/microsoft.codecoverage/17.7.2/microsoft.codecoverage.17.7.2.nupkg.sha512",
     "/Users/wenqingli/.nuget/packages/microsoft.net.test.sdk/17.7.2/microsoft.net.test.sdk.17.7.2.nupkg.sha512",

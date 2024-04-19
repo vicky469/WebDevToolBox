@@ -5415,11 +5415,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/wenqingli/Library/Mobile Documents/com~apple~CloudDocs/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj",
+      "projectUniqueName": "/Users/wenqingli/RiderProjects/DotNetToolBox/algorithm/algorithm.csproj",
       "projectName": "algorithm",
-      "projectPath": "/Users/wenqingli/Library/Mobile Documents/com~apple~CloudDocs/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj",
+      "projectPath": "/Users/wenqingli/RiderProjects/DotNetToolBox/algorithm/algorithm.csproj",
       "packagesPath": "/Users/wenqingli/.nuget/packages/",
-      "outputPath": "/Users/wenqingli/Library/Mobile Documents/com~apple~CloudDocs/Documents/repo/DotNetToolBox/algorithm/obj/",
+      "outputPath": "/Users/wenqingli/RiderProjects/DotNetToolBox/algorithm/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/wenqingli/.nuget/NuGet/NuGet.Config"
