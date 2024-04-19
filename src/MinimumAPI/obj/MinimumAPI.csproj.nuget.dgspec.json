@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/baobei/Documents/repo/DotNetToolBox/src/MinimumAPI/MinimumAPI.csproj": {}
+    "/Users/wenqingli/RiderProjects/DotNetToolBox/src/MinimumAPI/MinimumAPI.csproj": {}
   },
   "projects": {
-    "/Users/baobei/Documents/repo/DotNetToolBox/src/MinimumAPI/MinimumAPI.csproj": {
+    "/Users/wenqingli/RiderProjects/DotNetToolBox/src/MinimumAPI/MinimumAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/baobei/Documents/repo/DotNetToolBox/src/MinimumAPI/MinimumAPI.csproj",
+        "projectUniqueName": "/Users/wenqingli/RiderProjects/DotNetToolBox/src/MinimumAPI/MinimumAPI.csproj",
         "projectName": "MinimumAPI",
-        "projectPath": "/Users/baobei/Documents/repo/DotNetToolBox/src/MinimumAPI/MinimumAPI.csproj",
-        "packagesPath": "/Users/baobei/.nuget/packages/",
-        "outputPath": "/Users/baobei/Documents/repo/DotNetToolBox/src/MinimumAPI/obj/",
+        "projectPath": "/Users/wenqingli/RiderProjects/DotNetToolBox/src/MinimumAPI/MinimumAPI.csproj",
+        "packagesPath": "/Users/wenqingli/.nuget/packages/",
+        "outputPath": "/Users/wenqingli/RiderProjects/DotNetToolBox/src/MinimumAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/baobei/.nuget/NuGet/NuGet.Config"
+          "/Users/wenqingli/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.410/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.421/RuntimeIdentifierGraph.json"
         }
       }
     }

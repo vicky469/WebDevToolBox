@@ -7011,19 +7011,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/baobei/.nuget/packages/": {}
+    "/Users/wenqingli/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/baobei/Documents/repo/DotNetToolBox/src/TransformAPI/TransformAPI.csproj",
+      "projectUniqueName": "/Users/wenqingli/RiderProjects/DotNetToolBox/src/TransformAPI/TransformAPI.csproj",
       "projectName": "TransformAPI",
-      "projectPath": "/Users/baobei/Documents/repo/DotNetToolBox/src/TransformAPI/TransformAPI.csproj",
-      "packagesPath": "/Users/baobei/.nuget/packages/",
-      "outputPath": "/Users/baobei/Documents/repo/DotNetToolBox/src/TransformAPI/obj/",
+      "projectPath": "/Users/wenqingli/RiderProjects/DotNetToolBox/src/TransformAPI/TransformAPI.csproj",
+      "packagesPath": "/Users/wenqingli/.nuget/packages/",
+      "outputPath": "/Users/wenqingli/RiderProjects/DotNetToolBox/src/TransformAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/baobei/.nuget/NuGet/NuGet.Config"
+        "/Users/wenqingli/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -7135,8 +7135,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.410/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.421/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.SqlClient' 4.8.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
