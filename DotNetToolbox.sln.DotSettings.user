@@ -1,25 +1,45 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6a16ce5d_002D7ece_002D4050_002Dad90_002De8bde1066c10/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/baobei/Library/Caches/JetBrains/Rider2023.2/resharper-host/temp/Rider/vAny/CoverageData/_DotNetToolbox.-680856314/Snapshot/snapshot.utdcvr</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=32ddd3f1_002Df654_002D457e_002D9036_002D6804572bd248/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_OK #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.GreatestCommonDivisorOfStrings_1071.Test1&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.Recursion.SumPowersOfTwo.Test_OK&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=726c5b62_002D8c30_002D4182_002D81f8_002Dffaef7356482/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=77ab2d4e_002D6080_002D4499_002Dae29_002Da268ad6d72ee/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test_OK #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.GreatestCommonDivisorOfStrings_1071.Test1&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.Recursion.IsPalindrome_125.Test_OK&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.Data_Structure.GroupAnagrams_49.Test_OK&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.Data_Structure.GroupAnagrams_49&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.Data_Structure.ContainsDuplicate_217&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=738fa717_002Dbc2d_002D4731_002D9f58_002Dd110bb333738/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test_Experiment_Fail" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fce6c31d_002Def2c_002D4990_002Dbfba_002D65c2388aeb50/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_OK" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.GreatestCommonDivisorOfStrings_1071.Test_Experiment_Fail&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.Recursion.SummingNumbersInAnArray.Test_OK&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.Recursion.ReverseAString.Test_OK&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.Recursion.ReverseLinkedList.Test_OK&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.Recursion.IsPalindrome_125.Test_OK&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=da144037_002D0bd5_002D4165_002Db8dc_002D3ebf88c79f9f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.GreatestCommonDivisorOfStrings_1071.Test_Fail&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.GreatestCommonDivisorOfStrings_1071.Test_OK&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3::net6.0::LeetCode.GreatestCommonDivisorOfStrings_1071.Test_Experiment&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=54a53a7c_002D42d9_002D4403_002Da909_002D9aa56f3d3139_0023MinimumAPI/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=a5961c2d_002Dbf09_002D4943_002D8250_002D50d9040abc39_0023TransformAPI/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=a5961c2d_002Dbf09_002D4943_002D8250_002D50d9040abc39_0023TransformAPI/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=dbc69243_002Df9f9_002D4bb7_002D83d2_002D8ddf2b06dd48_0023PracticeDapper/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

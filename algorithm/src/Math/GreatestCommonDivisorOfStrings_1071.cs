@@ -52,23 +52,6 @@ public class GreatestCommonDivisorOfStrings_1071
         return sb.ToString() == str;
     }
     
-    
-    [Theory]
-    [InlineData("ABABAB", "ABAB", "AB")]
-    private void Test_Debug_OK(string str1, string str2, string expectedResult)
-    {
-        var result = GcdOfStrings(str1, str2);
-        Assert.Equal(expectedResult, result);
-    }
-    
-    [Theory]
-    [InlineData("ABAB", "ABABABAB", "ABAB")]
-    private void Test_Experiment_OK(string str1, string str2, string expectedResult)
-    {
-        var result = GcdOfStrings(str1, str2);
-        Assert.Equal(expectedResult, result);
-    }
-    
     [Theory]
     [InlineData("ABCABC", "ABC", "ABC")]
     [InlineData("ABABAB", "ABAB", "AB")]

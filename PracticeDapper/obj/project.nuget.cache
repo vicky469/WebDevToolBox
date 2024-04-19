@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "/UCtS9eFTHt2ptsDqyqNswUI4PKG83TC5C44rMibMcc15AARJN8U1M6lcPN888Tl6V011WMiFXFYUOoiv9qjVw==",
+  "success": true,
+  "projectFilePath": "/Users/baobei/Documents/repo/DotNetToolBox/PracticeDapper/PracticeDapper.csproj",
+  "expectedPackageFiles": [
+    "/Users/baobei/.nuget/packages/dapper/2.1.24/dapper.2.1.24.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/mysqlconnector/2.3.1/mysqlconnector.2.3.1.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/system.configuration.configurationmanager/4.5.0/system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/system.diagnostics.diagnosticsource/7.0.2/system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/system.security.accesscontrol/4.5.0/system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/system.security.permissions/4.5.0/system.security.permissions.4.5.0.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/system.security.principal.windows/4.5.0/system.security.principal.windows.4.5.0.nupkg.sha512",
+    "/Users/baobei/.nuget/packages/z.dapper.plus/7.1.0/z.dapper.plus.7.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

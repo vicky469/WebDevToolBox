@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/baobei/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj": {}
+    "/Users/wenqingli/Library/Mobile Documents/com~apple~CloudDocs/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj": {}
   },
   "projects": {
-    "/Users/baobei/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj": {
+    "/Users/wenqingli/Library/Mobile Documents/com~apple~CloudDocs/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/baobei/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj",
+        "projectUniqueName": "/Users/wenqingli/Library/Mobile Documents/com~apple~CloudDocs/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj",
         "projectName": "algorithm",
-        "projectPath": "/Users/baobei/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj",
-        "packagesPath": "/Users/baobei/.nuget/packages/",
-        "outputPath": "/Users/baobei/Documents/repo/DotNetToolBox/algorithm/obj/",
+        "projectPath": "/Users/wenqingli/Library/Mobile Documents/com~apple~CloudDocs/Documents/repo/DotNetToolBox/algorithm/algorithm.csproj",
+        "packagesPath": "/Users/wenqingli/.nuget/packages/",
+        "outputPath": "/Users/wenqingli/Library/Mobile Documents/com~apple~CloudDocs/Documents/repo/DotNetToolBox/algorithm/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/baobei/.nuget/NuGet/NuGet.Config"
+          "/Users/wenqingli/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.410/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.421/RuntimeIdentifierGraph.json"
         }
       }
     }
