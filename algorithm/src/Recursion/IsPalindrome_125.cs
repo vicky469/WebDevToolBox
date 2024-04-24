@@ -2,6 +2,17 @@ namespace LeetCode.Recursion;
 
 public class IsPalindrome_125:TestBase
 {
+    // simplified
+    static bool IsPalindromeRecursionSimplied(string s)
+    {
+        if (s == null) return false;
+        if (s == string.Empty || s.Length == 1) return true;
+        s = s.ToLower();
+        if (s[0] != s[s.Length - 1]) return false;
+        return IsPalindromeRecursionSimplied(s.Substring(1, s.Length - 2));
+    }
+    
+    // full
     static bool IsPalindromeRecursion(string s)
     {
         s = s.ToLower();

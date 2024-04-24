@@ -17,7 +17,7 @@
 
     <ItemGroup>
       <Folder Include="src\.Net\Linq\" />
-      <Folder Include="src\Array\Hashtable\" />
+      <Folder Include="src\Array\HashTable\" />
     </ItemGroup>
 
     <ItemGroup>

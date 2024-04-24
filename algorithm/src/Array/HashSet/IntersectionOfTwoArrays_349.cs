@@ -6,7 +6,8 @@ public class IntersectionOfTwoArrays_349
 {
     static int[] Intersection(int[] nums1, int[] nums2)
     {
-        var res = nums1.MyIntersect(nums2).ToArray();
+        //var res = nums1.MyIntersect(nums2).ToArray();
+        var res = nums1.Intersect(nums2).ToArray();
         return res;
     }
 
