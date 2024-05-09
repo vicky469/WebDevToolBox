@@ -1,6 +1,6 @@
-using LeetCode.Net;
+using System.Linq;
 
-namespace LeetCode;
+namespace LeetCode.array_and_string.HashSet;
 
 public class IntersectionOfTwoArrays_349
 {

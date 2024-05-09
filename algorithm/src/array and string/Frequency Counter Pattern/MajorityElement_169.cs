@@ -1,4 +1,4 @@
-namespace LeetCode;
+namespace LeetCode.array_and_string.Frequency_Counter_Pattern;
 
 public class MajorityElement_169
 {

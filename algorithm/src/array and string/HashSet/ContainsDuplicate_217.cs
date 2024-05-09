@@ -1,4 +1,6 @@
-namespace LeetCode.Data_Structure;
+
+
+namespace LeetCode;
 
 public class ContainsDuplicate_217: TestBase
 {

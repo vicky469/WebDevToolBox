@@ -1,4 +1,4 @@
-namespace LeetCode;
+namespace LeetCode.Two_Pointer;
 
 public class ValidPalindrome_125:TestBase
 {

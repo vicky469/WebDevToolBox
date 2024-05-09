@@ -21,7 +21,7 @@ public class FormSmallestNumberFromTwoDigitArrays_2605
             var oldVal = arr[num];
             if (oldVal == 0)
             {
-                min = Math.Min(num, min);
+                min = System.Math.Min(num, min);
             }
         }
 
@@ -29,7 +29,7 @@ public class FormSmallestNumberFromTwoDigitArrays_2605
         {
             return min;
         }
-        min = Math.Min(minNum1, minNum2);
+        min = System.Math.Min(minNum1, minNum2);
         if (min == minNum1)
         {
             return int.Parse(minNum1.ToString() + minNum2.ToString());

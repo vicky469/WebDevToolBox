@@ -1,4 +1,6 @@
-namespace LeetCode;
+using System.Linq;
+
+namespace LeetCode.Sliding_Window_Pattern;
 
 public class MinimumSwapsToGroupAll1s_1151
 {
@@ -19,7 +21,7 @@ public class MinimumSwapsToGroupAll1s_1151
             onesInWindow -= data[i - windowSize];
         
             // Update the minimum swaps needed
-            minSwaps = Math.Min(minSwaps, CalculateMinSwaps(windowSize, onesInWindow));
+            minSwaps = System.Math.Min(minSwaps, CalculateMinSwaps(windowSize, onesInWindow));
         }
         return minSwaps;
     }

@@ -12,7 +12,7 @@ public class BestTimeToBuyAndSellStock_121
             {
                 var sell = prices[j];
                 int profit = sell - buy; 
-                maxProfit = Math.Max(maxProfit, profit);  
+                maxProfit = System.Math.Max(maxProfit, profit);  
             }
         }
         return maxProfit <= 0? 0: maxProfit;   

@@ -1,4 +1,6 @@
-namespace LeetCode;
+using System.Collections.Generic;
+
+namespace LeetCode.array_and_string.String;
 
 public class ValidAnagram_242
 {

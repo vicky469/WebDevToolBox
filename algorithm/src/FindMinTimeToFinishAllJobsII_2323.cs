@@ -2,8 +2,8 @@ namespace LeetCode;
 
 public class FindMinTimeToFinishAllJobsII_2323 {
     static int MinimumTime(int[] jobs, int[] workers) {
-        Array.Sort(jobs);
-        Array.Sort(workers);
+        System.Array.Sort(jobs);
+        System.Array.Sort(workers);
         int minDays = 0;
         for(int i = 0; i < workers.Length; i++){
             int days = jobs[i]/workers[i];
@@ -11,7 +11,7 @@ public class FindMinTimeToFinishAllJobsII_2323 {
             {
                 days += 1;
             }     
-            minDays = Math.Max(minDays, days);
+            minDays = System.Math.Max(minDays, days);
         }
         return minDays;
     }

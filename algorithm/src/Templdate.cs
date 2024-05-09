@@ -1,3 +1,5 @@
+using System;
+
 namespace LeetCode;
 
 public class Templdate : TestBase

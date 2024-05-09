@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace LeetCode.Recursion;
 
 public class SummingNumbersInAnArray: TestBase

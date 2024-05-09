@@ -1,4 +1,4 @@
-namespace LeetCode.Data_Structure;
+namespace LeetCode.array_and_string.Frequency_Counter_Pattern;
 
 public class FrequencyTracker {
     private int[] cnt = new int[100001]; // index: number, value: frequency

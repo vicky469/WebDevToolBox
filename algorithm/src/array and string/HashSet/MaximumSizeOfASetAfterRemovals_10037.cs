@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace LeetCode;
 
 public class MaximumSizeOfASetAfterRemovals_10037

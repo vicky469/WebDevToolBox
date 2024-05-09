@@ -1,4 +1,6 @@
-namespace LeetCode.Data_Structure;
+using System.Collections.Generic;
+
+namespace LeetCode.array_and_string.Frequency_Counter_Pattern;
 
 public class GroupAnagrams_49 : TestBase
 {

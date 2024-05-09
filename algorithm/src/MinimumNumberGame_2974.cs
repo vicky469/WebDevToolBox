@@ -1,12 +1,13 @@
-namespace LeetCode;
+using System.Linq;
 
+namespace LeetCode;
 public class MinimumNumberGame_2974
 {
     static int[] NumberGame(int[] nums)
     {
         var output = new int[nums.Length];
         if (nums.Length == 0) return null;
-        Array.Sort(nums);
+        System.Array.Sort(nums);
         var list = nums.ToList();
         var round = 0;
         while(list.Count > 0)
