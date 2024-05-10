@@ -11,14 +11,14 @@ public class MaximumDepthOfBinaryTree_104: TestBase
         }
         
         TestOutputHelper.WriteLine(root?.left != null ? $"Left: { root.left.val.ToString() }" : "Left is null");
-        int leftDepth = MaxDepth(root.left);
+        var leftDepth = MaxDepth(root.left);
 
         #region print
         TestOutputHelper.WriteLine($"left depth: {leftDepth}");
         TestOutputHelper.WriteLine("============   left is done    ============");
         #endregion
         TestOutputHelper.WriteLine(root?.right != null ? $"Right: { root.right.val.ToString() }" : "Right is null");
-        int rightDepth = MaxDepth(root.right);
+        var rightDepth = MaxDepth(root.right);
 
         #region print
         TestOutputHelper.WriteLine($"right depth: {rightDepth}");

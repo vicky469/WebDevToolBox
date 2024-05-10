@@ -9,40 +9,41 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
+
     public static TreeNode BuildTree(int?[] nums)
     {
         if (nums == null || nums.Length == 0) return null;
 
-        TreeNode[] nodes = new TreeNode[nums.Length];
-        for (int i = 0; i < nums.Length; i++)
+        var root = new TreeNode((int)nums[0]);
+        var queue = new Queue<TreeNode>();
+        queue.Enqueue(root);
+        bool isLeft = true;
+        
+        for (var i = 1; i < nums.Length; i++)
         {
-            if (nums[i].HasValue)
+            var currentRoot = queue.Peek();
+            var node = nums[i].HasValue ? new TreeNode((int)nums[i]) : null;
+            if (currentRoot != null)
             {
-                if (nodes[i] == null)
+                // this is for the left node
+                if (isLeft)
                 {
-                    nodes[i] = new TreeNode(nums[i].Value);
+                    currentRoot.left = node;
                 }
                 else
                 {
-                    nodes[i].val = nums[i].Value;
+                    currentRoot.right = node;
+                    queue.Dequeue();
                 }
-
-                int left = 2 * i + 1;
-                int right = 2 * i + 2;
-                if (left < nums.Length && nums[left].HasValue)
+                if (node != null)
                 {
-                    nodes[left] = new TreeNode(nums[left].Value);
-                    nodes[i].left = nodes[left];
+                    queue.Enqueue(node);
                 }
-                if (right < nums.Length && nums[right].HasValue)
-                {
-                    nodes[right] = new TreeNode(nums[right].Value);
-                    nodes[i].right = nodes[right];
-                }
+                isLeft = !isLeft;
             }
         }
-
-        return nodes[0];
+        
+        return root;
     }
     
 }
