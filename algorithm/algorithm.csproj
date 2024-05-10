@@ -16,14 +16,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="src\.Net\Linq\" />
-      <Folder Include="src\array and string\HashTable\" />
+      <Folder Include="src\.NET\Linq\" />
+      <Folder Include="src\Array and String\HashTable\" />
     </ItemGroup>
 
     <ItemGroup>
         <Compile Remove="obj\**" />
-        <Compile Include="src\.Net\DataTypes.cs" />
-        <Compile Include="src\.Net\Enumerable.cs" />
+        <Compile Include="src\.NET\DataTypes.cs" />
+        <Compile Include="src\.NET\Enumerable.cs" />
     </ItemGroup>
 
     <ItemGroup>

@@ -4,9 +4,10 @@ namespace LeetCode;
 
 public class Templdate : TestBase
 {
-    static bool Solution(string input)
+    bool Solution(string input)
     {
-        throw new NotImplementedException();
+        TestOutputHelper.WriteLine("Hello World");
+        return true;
     }
 
 
