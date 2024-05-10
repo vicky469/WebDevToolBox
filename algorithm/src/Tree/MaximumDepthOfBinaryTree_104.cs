@@ -1,13 +1,11 @@
 namespace LeetCode.Tree;
-
+// https://leetcode.com/problems/maximum-depth-of-binary-tree/description/?envType=study-plan-v2&envId=top-interview-150
 public class MaximumDepthOfBinaryTree_104
 {
-    public int MaxDepth(TreeNode root) {
+    public int MaxDepth_BFS(TreeNode root) {
         var maxDepth = 0;
         if (root == null) return maxDepth;
-        // BFS, use queue to keep track of nodes to be processed.
         var queue = new Queue<TreeNode>();
-        // Add root to queue
         queue.Enqueue(root);
         while (queue.Count > 0)
         {
@@ -17,15 +15,8 @@ public class MaximumDepthOfBinaryTree_104
             {
                 // remove the node from the first item in the queue
                 var node = queue.Dequeue();
-                // add left and right node to the queue
-                if (node.left != null)
-                {
-                    queue.Enqueue(node.left);
-                }
-                if (node.right != null)
-                {
-                    queue.Enqueue(node.right);
-                }
+                if (node.left != null) queue.Enqueue(node.left);
+                if (node.right != null) queue.Enqueue(node.right);
             }
             maxDepth++;
         }
@@ -49,7 +40,7 @@ public class MaximumDepthOfBinaryTree_104
         }
 
         var root = TreeNode.BuildTree(nums);
-        var result = MaxDepth(root);
+        var result = MaxDepth_BFS(root);
         Assert.Equal(expectedResult, result);
     }
     

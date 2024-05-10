@@ -16,6 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="notebook\" />
       <Folder Include="src\.NET\Linq\" />
       <Folder Include="src\Array and String\HashTable\" />
     </ItemGroup>
