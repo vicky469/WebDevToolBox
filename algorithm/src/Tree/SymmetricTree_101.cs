@@ -1,18 +1,21 @@
+// https://leetcode.com/problems/symmetric-tree/description/?envType=study-plan-v2&envId=top-interview-150
+
 namespace LeetCode.Tree;
 
 public class SymmetricTree_101
 {
-    public bool IsSymmetric_BFS(TreeNode root) {
+    public bool IsSymmetric_BFS(TreeNode root)
+    {
         var queue = new Queue<TreeNode>();
         queue.Enqueue(root);
-        while(queue.Count > 0)
+        while (queue.Count > 0)
         {
             var size = queue.Count;
             var level = new List<int?>();
             for (var i = 0; i < size; i++)
             {
                 var node = queue.Dequeue();
-                if (node!= null)
+                if (node != null)
                 {
                     level.Add(node.left?.val);
                     queue.Enqueue(node.left);
@@ -21,8 +24,8 @@ public class SymmetricTree_101
                 }
             }
 
-            var r = level.Count-1;
-            for (var l = 0; l < level.Count/2; l++)
+            var r = level.Count - 1;
+            for (var l = 0; l < level.Count / 2; l++)
             {
                 if (level[l] != level[r--]) return false;
             }
@@ -30,7 +33,7 @@ public class SymmetricTree_101
 
         return true;
     }
-    
+
     [Theory]
     [InlineData(1)]
     [InlineData(2)]
@@ -42,11 +45,11 @@ public class SymmetricTree_101
         switch (testCaseId)
         {
             case 1:
-                nums = new int?[]{1,2,2,null,3,null,3};
+                nums = new int?[] { 1, 2, 2, null, 3, null, 3 };
                 expectedResult = false;
                 break;
             case 2:
-                nums = new int?[]{1,2,2,3,4,4,3};
+                nums = new int?[] { 1, 2, 2, 3, 4, 4, 3 };
                 expectedResult = true;
                 break;
         }

@@ -28,8 +28,8 @@ public class MaximumDepthOfBinaryTree_104
     public void Test_OK(int testCaseId)
     {
         int?[] nums = null;
-        int expectedResult = 0;
-
+        int expectedResult = default;
+    
         switch (testCaseId)
         {
             case 1:
@@ -38,7 +38,7 @@ public class MaximumDepthOfBinaryTree_104
                 break;
             // Add more cases as needed
         }
-
+    
         var root = TreeNode.BuildTree(nums);
         var result = MaxDepth_BFS(root);
         Assert.Equal(expectedResult, result);
