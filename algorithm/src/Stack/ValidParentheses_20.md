@@ -33,20 +33,3 @@ Example 3:
      - Let o be the top element popped from S. If c does not correspond to o (i.e., they are not a pair according to D), then IsValid(s) = false.
 6. If S is not empty after the iteration, then IsValid(s) = false. 
 7. Return IsValid(s) = true.
-
-### Recursion
-Questions:
-1. What is the base case?  
-    if(s.Length == 0) return true;  
-    if(s.Length == 1) return false;  
-    if first character is a close bracket, return false.
-2. How do we partition the data?  
-    It can be grouped into two different buckets.
-    closingBracketIndex: Find the closing bracket of the first open bracket.
-    1) Immediate Close, nothing inside
-       remainingString: s.Substring(closingBracketIndex + 1);
-    2) Close Later, another pair is inside and properly closed
-       innerString: s.Substring(1, closingBracketIndex - 1);
-    
-3. What is the recursive case?   
-   
