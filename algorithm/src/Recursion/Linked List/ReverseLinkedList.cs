@@ -1,18 +1,16 @@
-using System.Collections.Generic;
-using LeetCode.Data_Structure;
-using static LeetCode.Data_Structure.LinkedList;
+using static LeetCode.Data_Structure.LinkedList<int>;
 
-namespace LeetCode.Recursion;
+namespace LeetCode.Recursion.Linked_List;
 public class ReverseLinkedList:TestBase
 {
-    static Node ReverselistRecursion(Node head)
+    static Node<int> ReverselistRecursion(Node<int> head)
     {
         if (head == null || head.Next == null)
             return head;
  
         // Reverse the rest list and put
         // the first element at the end
-        Node rest = ReverselistRecursion(head.Next);
+        Node<int> rest = ReverselistRecursion(head.Next);
         head.Next.Next = head;
  
         // Tricky step --
@@ -29,10 +27,10 @@ public class ReverseLinkedList:TestBase
     private void Test_OK(int[] input, int[] expectedOutput)
     {
         // Arrange
-        var linkedList = new LinkedList();
+        var linkedList = new Data_Structure.LinkedList<int>();
         foreach (var value in input)
         {
-            linkedList.AddNode(new Node(value));
+            linkedList.AddNode(new Node<int>(value));
         }
 
         //Act

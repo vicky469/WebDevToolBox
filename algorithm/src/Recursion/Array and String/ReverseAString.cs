@@ -1,25 +1,20 @@
-namespace LeetCode.Recursion;
+namespace LeetCode.Recursion.Array_and_String;
 
 public class ReverseAString:TestBase
 {
     static string ReverseString(string str)
     {
-        if (str.Length == 1)
-        {
-            Console.WriteLine("========= start to return =========");
-            return str;
-        }
+        if (string.IsNullOrEmpty(str) || str.Length == 1) return str;
+        
         var head = str.Substring(0,1);
         var tail =  str.Substring(1,str.Length-1);
-        Console.WriteLine($"head: {head}");
-        Console.WriteLine($"tail: {tail}");
         var res =  ReverseString(tail)+head;
-        Console.WriteLine($"return: {res}");
         return res;
     }
     
     [Theory]
     [InlineData("cat", "tac")]
+    [InlineData("cartier", "reitrac")]
     private void Test_OK(string input, string expectedResult)
     {
         var res = ReverseString(input);

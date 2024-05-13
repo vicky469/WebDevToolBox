@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace LeetCode.Recursion;
+namespace LeetCode.Recursion.Array_and_String;
 
 public class Exponent
 {

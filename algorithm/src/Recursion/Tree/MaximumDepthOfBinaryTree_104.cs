@@ -1,6 +1,4 @@
-using LeetCode.Tree;
-
-namespace LeetCode.Recursion;
+namespace LeetCode.Recursion.Tree;
 
 public class MaximumDepthOfBinaryTree_104: TestBase
 {

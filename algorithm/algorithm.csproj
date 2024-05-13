@@ -19,6 +19,7 @@
       <Folder Include="notebook\" />
       <Folder Include="src\.NET\Linq\" />
       <Folder Include="src\Array and String\HashTable\" />
+      <Folder Include="src\Linked List\" />
     </ItemGroup>
 
     <ItemGroup>

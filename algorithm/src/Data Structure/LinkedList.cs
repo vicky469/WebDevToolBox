@@ -1,25 +1,25 @@
 namespace LeetCode.Data_Structure;
 
-public class LinkedList
+public class LinkedList<T>
 {
-    public Node Head;
+    public Node<T> Head;
  
-    public class Node {
-        public int Data;
-        public Node Next;
+    public class Node<T> {
+        public T Data { get; set; }
+        public Node<T> Next { get; set; }
  
-        public Node(int d)
+        public Node(T data)
         {
-            Data = d;
+            Data = data;
             Next = null;
         }
     }
-    public void AddNode(Node node)
+    public void AddNode(Node<T> node)
     {
         if (Head == null)
             Head = node;
         else {
-            Node temp = Head;
+            Node<T> temp = Head;
             while (temp.Next != null) {
                 temp = temp.Next;
             }
@@ -29,7 +29,7 @@ public class LinkedList
     
     public void ReverseList()
     {
-        Node prev = null, current = Head, next = null;
+        Node<T> prev = null, current = Head, next = null;
         while (current != null) {
             next = current.Next;
             current.Next = prev;
@@ -39,12 +39,12 @@ public class LinkedList
         Head = prev;
     }
     
-    public Node Reverse(Node head)
+    public Node<T> Reverse(Node<T> head)
     {
         if (head == null || head.Next == null)
             return head;
         
-        Node rest = Reverse(head.Next);
+        Node<T> rest = Reverse(head.Next);
         head.Next.Next = head;
         
         head.Next = null;

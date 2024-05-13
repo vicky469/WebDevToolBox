@@ -2,7 +2,6 @@ namespace LeetCode.array_and_string.Two_Pointer;
 
 public class ContainerWithMostWater_11
 {
-    
     public int MaxArea(int[] height)
     {
         var left = 0;
@@ -16,20 +15,17 @@ public class ContainerWithMostWater_11
             // how to decide which pointer to move?
             // move the pointer with the smaller height
             if (height[left] < height[right])
-            {
                 left++;
-            }
             else
-            {
                 right--;
-            }
         }
+
         return maxArea;
     }
-    
+
     [Theory]
-    [InlineData( new int []{1,8,6,2,5,4,8,3,7}, 49)]
-    [InlineData( new int []{1, 1}, 1)]
+    [InlineData(new[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }, 49)]
+    [InlineData(new[] { 1, 1 }, 1)]
     private void Test_OK(int[] height, int expectedResult)
     {
         var res = MaxArea(height);

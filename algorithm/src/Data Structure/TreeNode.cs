@@ -9,6 +9,13 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
+    public int Size
+    {
+        get
+        {
+            return SizeOfTree(this);
+        }
+    }
 
     public static TreeNode BuildTree(int?[] nums)
     {
@@ -44,6 +51,18 @@ public class TreeNode {
         }
         
         return root;
+    }
+    
+    private int SizeOfTree(TreeNode node)
+    {
+        if (node == null)
+        {
+            return 0;
+        }
+        else
+        {
+            return (SizeOfTree(node.left) + 1 + SizeOfTree(node.right));
+        }
     }
     
     [Theory]

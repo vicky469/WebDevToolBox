@@ -1,5 +1,3 @@
-using LeetCode.Tree;
-
 namespace LeetCode.Stack;
 
 public class MaximumDepthOfBinaryTree_104
@@ -8,7 +6,7 @@ public class MaximumDepthOfBinaryTree_104
     {
         var maxDepth = 0;
         if (root == null) return 0;
-        var stack  = new Stack<(TreeNode node, int depth)>(); // node and its depth
+        var stack  = new System.Collections.Generic.Stack<(TreeNode node, int depth)>(); // node and its depth
         stack.Push((root,1));
         while (stack.Count > 0)
         {
