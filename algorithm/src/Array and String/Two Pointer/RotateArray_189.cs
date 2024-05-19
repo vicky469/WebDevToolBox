@@ -60,7 +60,7 @@ public class RotateArray_189: TestBase
         {
             var currentIndex = i;
             var currentValue = nums[i];
-            TestOutputHelper.WriteLine($"======   currentIndex: {currentIndex}, currentValue: {currentValue}   ======");
+            TestOutputHelper.WriteLine($"====== {i+1} cycle:  currentIndex: {currentIndex}, currentValue: {currentValue}   ======");
             do
             {
                 var nextIndex = (currentIndex + k) % nums.Length;
@@ -98,7 +98,7 @@ public class RotateArray_189: TestBase
     
     [Theory]
     [InlineData(new[] { 1,2,3,4,5,6 }, 2, new[] { 5,6,1,2,3,4 })]
-    [InlineData(new[] { 1,2,3 }, 1, new[] { 3,1,2})]
+    [InlineData(new[] { 1,2,3 }, 2, new[] { 2,3,1})]
     private void Test_OK3(int[] nums,int k,  int[] expectedResult)
     {
         //Rotate(nums,k);
