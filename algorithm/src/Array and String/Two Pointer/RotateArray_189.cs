@@ -1,0 +1,112 @@
+namespace LeetCode.Array_and_String.Two_Pointer;
+
+public class RotateArray_189: TestBase
+{
+    // 1. brute force
+    void Rotate_BruteForce(int[] nums, int k) {
+        k %= nums.Length; // to handle cases where k is
+                          // larger than the length of the array
+        int prev;
+        for (var i = 0; i < k; i++) {
+            prev = nums[nums.Length - 1];
+            for (var j = 0; j < nums.Length; j++) {
+                (nums[j], prev) = (prev, nums[j]);
+            }
+        }
+    }
+    
+    // 2. Reverse Three Times
+    void Rotate_Revert_ThreeTimes(int[] nums, int k) {
+        k %= nums.Length;
+        Reverse(nums, 0, nums.Length - 1);
+        Reverse(nums, 0, k - 1);
+        Reverse(nums, k, nums.Length - 1);
+    }
+    void Reverse(int[] nums, int start, int end)
+    {
+        while (start < end)
+        {
+            (nums[start], nums[end]) = (nums[end], nums[start]);
+            start++;
+            end--;
+        }
+    }
+    
+    // 3. Using Cyclic Replacements
+    // TODO: Come back later
+    void Rotate(int[] nums, int k)
+    {
+        k %= nums.Length;
+        var count = 0;
+        for (var i = 0; count < nums.Length; i++)
+        {
+            var currentIndex = i;
+            var currentValue = nums[i];
+            do
+            {
+                var nextIndex = (currentIndex + k) % nums.Length;
+                (nums[nextIndex], currentValue) = (currentValue, nums[nextIndex]);
+                currentIndex = nextIndex;
+                count++;
+            } while (i != currentIndex);
+        }
+    }
+    
+    void Rotate_PRINT(int[] nums, int k)
+    {
+        k %= nums.Length;
+        var count = 0;
+        for (var i = 0; count < nums.Length; i++)
+        {
+            var currentIndex = i;
+            var currentValue = nums[i];
+            TestOutputHelper.WriteLine($"======   currentIndex: {currentIndex}, currentValue: {currentValue}   ======");
+            do
+            {
+                var nextIndex = (currentIndex + k) % nums.Length;
+                TestOutputHelper.WriteLine($"nextIndex: {nextIndex}, nums[nextIndex]: {nums[nextIndex]}");
+                (nums[nextIndex], currentValue) = (currentValue, nums[nextIndex]);
+                TestOutputHelper.WriteLine($"SWAP nums[nextIndex]: {nums[nextIndex]}, currentValue: {currentValue}");
+                currentIndex = nextIndex;
+                TestOutputHelper.WriteLine($"currentIndex: {currentIndex}");
+                count++;
+                TestOutputHelper.WriteLine($"count: {count}");
+            } while (i != currentIndex);
+        }
+    }
+    
+    
+    
+    
+    
+    
+    [Theory]
+    [InlineData(new[] { 1,2,3,4,5,6,7 }, 3, new[] { 5,6,7,1,2,3,4 })]
+    private void Test_OK(int[] nums,int k,  int[] expectedResult)
+    {
+        Rotate_BruteForce(nums,k);
+        Assert.Equal(expectedResult, nums);
+    }
+    
+    [Theory]
+    [InlineData(new[] { 1,2,3,4,5,6,7 }, 3, new[] { 5,6,7,1,2,3,4 })]
+    private void Test_OK2(int[] nums,int k,  int[] expectedResult)
+    {
+        Rotate_Revert_ThreeTimes(nums,k);
+        Assert.Equal(expectedResult, nums);
+    }
+    
+    [Theory]
+    [InlineData(new[] { 1,2,3,4,5,6 }, 2, new[] { 5,6,1,2,3,4 })]
+    [InlineData(new[] { 1,2,3 }, 1, new[] { 3,1,2})]
+    private void Test_OK3(int[] nums,int k,  int[] expectedResult)
+    {
+        //Rotate(nums,k);
+        Rotate_PRINT(nums,k);
+        Assert.Equal(expectedResult, nums);
+    }
+
+    public RotateArray_189(ITestOutputHelper testOutputHelper) : base(testOutputHelper)
+    {
+    }
+}

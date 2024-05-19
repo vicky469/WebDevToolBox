@@ -8,10 +8,10 @@ public class FullBinaryTree
   //   2      3                2      3
   //  /  \                    /   
   // 4    5    (Y)           4          (N)
-    public bool IsFullBinaryTree(TreeNode root)
+    public bool IsFullBinaryTree(TreeNode? root)
     {
        if(root==null) return true;
-       var queue = new Queue<TreeNode>();
+       var queue = new Queue<TreeNode?>();
        queue.Enqueue(root);
        while (queue.Count > 0)
        {

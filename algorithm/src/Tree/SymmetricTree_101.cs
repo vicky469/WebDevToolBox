@@ -4,9 +4,9 @@ namespace LeetCode.Tree;
 
 public class SymmetricTree_101
 {
-    public bool IsSymmetric_BFS(TreeNode root)
+    public bool IsSymmetric_BFS(TreeNode? root)
     {
-        var queue = new Queue<TreeNode>();
+        var queue = new Queue<TreeNode?>();
         queue.Enqueue(root);
         while (queue.Count > 0)
         {
@@ -17,20 +17,18 @@ public class SymmetricTree_101
                 var node = queue.Dequeue();
                 if (node != null)
                 {
-                    level.Add(node.left?.val);
-                    queue.Enqueue(node.left);
-                    level.Add(node.right?.val);
+                    queue.Enqueue(node.left); 
                     queue.Enqueue(node.right);
+                    level.Add(node.left?.val); 
+                    level.Add(node.right?.val);   
                 }
             }
-
             var r = level.Count - 1;
             for (var l = 0; l < level.Count / 2; l++)
             {
                 if (level[l] != level[r--]) return false;
             }
         }
-
         return true;
     }
 

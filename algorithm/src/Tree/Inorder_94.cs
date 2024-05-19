@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/binary-tree-inorder-traversal/description/
 
 namespace LeetCode.Recursion.Tree;
-public class Inorder_BinaryTree_94
+public class Inorder_94
 {
     //    1                      
     //  /    \                          
@@ -9,21 +9,17 @@ public class Inorder_BinaryTree_94
     //       /                      
     //     3        
     // res: [6, 1, 3, 2]
-    public IList<int> InorderTraversal(TreeNode root) {
+    public IList<int> InorderTraversal(TreeNode? root) {
         var list = new List<int>();
-        InOrderHelper(root, list);
+        InOrder(root, list);
         return list;
     }
-    private void InOrderHelper (TreeNode root, List<int> list){
-        if (root != null)
-        {
-            // traverse left
-            InOrderHelper(root.left, list);
-            // add root
-            list.Add(root.val);
-            // traverse right
-            InOrderHelper(root.right, list);
-        }
+    void InOrder (TreeNode? root, List<int> list)
+    {
+        if (root == null) return;
+        InOrder(root.left, list);
+        list.Add(root.val);
+        InOrder(root.right, list);
     }
     
     [Theory]

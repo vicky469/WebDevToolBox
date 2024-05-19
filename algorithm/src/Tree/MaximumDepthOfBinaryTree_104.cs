@@ -2,10 +2,10 @@ namespace LeetCode.Tree;
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/description/?envType=study-plan-v2&envId=top-interview-150
 public class MaximumDepthOfBinaryTree_104
 {
-    public int MaxDepth_BFS(TreeNode root) {
+    public int MaxDepth_BFS(TreeNode? root) {
         var maxDepth = 0;
         if (root == null) return maxDepth;
-        var queue = new Queue<TreeNode>();
+        var queue = new Queue<TreeNode?>();
         queue.Enqueue(root);
         while (queue.Count > 0)
         {

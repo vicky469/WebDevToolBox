@@ -2,9 +2,9 @@ namespace LeetCode.Tree;
 
 public class TreeNode {
     public int val;
-    public TreeNode left;
-    public TreeNode right;
-    public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+    public TreeNode? left;
+    public TreeNode? right;
+    public TreeNode(int val=0, TreeNode? left=null, TreeNode? right=null) {
         this.val = val;
         this.left = left;
         this.right = right;
@@ -16,13 +16,36 @@ public class TreeNode {
             return SizeOfTree(this);
         }
     }
+    
+    public override bool Equals(object obj)
+    {
+        if (obj == null || GetType() != obj.GetType())
+        {
+            return false;
+        }
 
-    public static TreeNode BuildTree(int?[] nums)
+        var node = (TreeNode)obj;
+        return val == node.val && 
+               ((left == null && node.left == null) || (left != null && left.Equals(node.left))) && 
+               ((right == null && node.right == null) || (right != null && right.Equals(node.right)));
+    }
+
+    // When you override Equals, you should also override GetHashCode
+    public override int GetHashCode()
+    {
+        int hash = 17;
+        hash = hash * 23 + val.GetHashCode();
+        hash = hash * 23 + (left != null ? left.GetHashCode() : 0);
+        hash = hash * 23 + (right != null ? right.GetHashCode() : 0);
+        return hash;
+    }
+
+    public static TreeNode? BuildTree(int?[] nums)
     {
         if (nums == null || nums.Length == 0) return null;
 
         var root = new TreeNode((int)nums[0]);
-        var queue = new Queue<TreeNode>();
+        var queue = new Queue<TreeNode?>();
         queue.Enqueue(root);
         bool isLeft = true;
         
@@ -53,7 +76,7 @@ public class TreeNode {
         return root;
     }
     
-    private int SizeOfTree(TreeNode node)
+    private int SizeOfTree(TreeNode? node)
     {
         if (node == null)
         {

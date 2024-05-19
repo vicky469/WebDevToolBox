@@ -2,7 +2,7 @@ namespace LeetCode.Recursion.Tree;
 
 public class MaximumDepthOfBinaryTree_104: TestBase
 {
-    public int MaxDepth(TreeNode root)
+    public int MaxDepth(TreeNode? root)
     {
         if (root == null) {
             return 0;

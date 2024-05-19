@@ -2,12 +2,12 @@ namespace LeetCode.array_and_string.Two_Pointer;
 
 public class RemoveDuplicatesFromSortedArrayII_80
 {
-    private int RemoveDuplicates(int[] nums)
+    int RemoveDuplicates(int[] nums)
     {
-        if (nums.Length == 0) return 0;
+        if(nums.Length < 2) return nums.Length;
         var s = 2; // where the next element should be placed
         for (var f = 2; f < nums.Length; f++)
-            if (nums[f] > nums[s - 2])
+            if (nums[f] != nums[s - 2])
                 nums[s++] = nums[f];
         return s;
     }

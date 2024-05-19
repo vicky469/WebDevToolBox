@@ -2,9 +2,10 @@ namespace LeetCode.array_and_string;
 
 public class MergeSortedArray_88
 {
-    private static void Merge(int[] nums1, int m, int[] nums2, int n)
+    void Merge(int[] nums1, int m, int[] nums2, int n)
     {
-        // starting backwards, add the largest element and the next largest element and so on at the end of nums1
+        // starting backwards, add the largest element and
+        // the next largest element and so on at the end of nums1
         var p1 = m - 1; // last element in nums1
         var p2 = n - 1; // last element in nums2
         var p = m + n - 1; // last element in the output array
