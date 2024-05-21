@@ -21,7 +21,7 @@ public class ValidParentheses_20
         var start = 0; 
         var end = 1;
         while(end < partsMapping.Count){
-            if(partsMapping.SafeContainsKey(parts[end]))
+            if(partsMapping.ContainsKey(parts[end]))
             {
                 start++; end++;
             }

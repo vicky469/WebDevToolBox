@@ -33,15 +33,20 @@ public class RotateArray_189: TestBase
     }
     
     // 3. Using Cyclic Replacements
-    // TODO: Come back later
+    // Time complexity : O(n)
+    // The time complexity of this algorithm is O(n) because each element in the array is visited exactly once.
     void Rotate(int[] nums, int k)
     {
         k %= nums.Length;
         var count = 0;
-        for (var i = 0; count < nums.Length; i++)
+        // The total number of elements in the array is n.
+        // We must move n elements.
+        for (var i = 0; count < nums.Length; i++) 
         {
             var currentIndex = i;
             var currentValue = nums[i];
+            // In the do while loop, we keep moving elements to their correct position until we finish one cycle.
+            // One cycle means we have returned to the original index.
             do
             {
                 var nextIndex = (currentIndex + k) % nums.Length;

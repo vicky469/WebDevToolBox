@@ -25,15 +25,4 @@ public static class DictionaryExtensions
             return default(TValue);
         }
     }
-    public static bool SafeContainsKey<TKey, TValue>(this Dictionary<TKey, TValue> dictionary, TKey key)
-    {
-        try
-        {
-            return dictionary.ContainsKey(key);
-        }
-        catch
-        {
-            return false;
-        }
-    }
 }
