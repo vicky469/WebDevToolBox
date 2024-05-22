@@ -21,7 +21,7 @@ public class JumpGameII_45: TestBase
     
     [Theory]
     [InlineData(new[] { 2,3,1,1,4 },  2)]
-    //[InlineData(new[] { 3,2,0,1,4},  2)]
+    [InlineData(new[] { 3,2,0,1,4},  2)]
     private void Test_OK(int[] nums, int expectedResult)
     {
         var res = Jump(nums);
