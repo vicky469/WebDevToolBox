@@ -1,5 +1,12 @@
 The `IsSymmetric_BFS` method checks if a given binary tree is symmetric (mirrored around its center) using the Breadth-First Search (BFS) algorithm.
 
+<img src="https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg"/>
+
+Input: root = [1,2,2,3,4,4,3]   
+Output: true  
+
+isEqual(leftSubtree.left, rightSubtree.right)
+
 Pseudocode:
 1. Initialize a queue and add the root node to it.
 2. While the queue is not empty:

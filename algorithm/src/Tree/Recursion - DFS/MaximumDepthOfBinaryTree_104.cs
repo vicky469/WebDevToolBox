@@ -1,4 +1,4 @@
-namespace LeetCode.Recursion.Tree;
+namespace LeetCode.Tree.Recursion___DFS;
 
 public class MaximumDepthOfBinaryTree_104: TestBase
 {

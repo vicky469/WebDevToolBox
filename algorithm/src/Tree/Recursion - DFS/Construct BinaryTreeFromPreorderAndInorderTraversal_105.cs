@@ -1,10 +1,10 @@
 // https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/
-namespace LeetCode.Tree;
+namespace LeetCode.Tree.Recursion___DFS;
 
 //preorder and inorder consist of unique values.
-public class Construct_BinaryTreeFromPreorderAndInorderTraversal_105: TestBase
+public class ConstructBinaryTreeFromPreorderAndInorderTraversal_105: TestBase
 {
-    public TreeNode? BuildTree(int[] preorder, int[] inorder)
+    TreeNode? BuildTree(int[] preorder, int[] inorder)
     {
         if(preorder.Length == 0 || inorder.Length == 0) return null;
         var rootVal = preorder[0];
@@ -15,7 +15,7 @@ public class Construct_BinaryTreeFromPreorderAndInorderTraversal_105: TestBase
         return root;
     }
     
-    public TreeNode? BuildTreeWithLogs(int[] preorder, int[] inorder)
+    TreeNode? BuildTreeWithLogs(int[] preorder, int[] inorder)
     {
         if(preorder.Length == 0 || inorder.Length == 0) return null;
         var rootVal = preorder[0];
@@ -59,7 +59,7 @@ public class Construct_BinaryTreeFromPreorderAndInorderTraversal_105: TestBase
         Assert.Equal( expected,res);
     }
 
-    public Construct_BinaryTreeFromPreorderAndInorderTraversal_105(ITestOutputHelper testOutputHelper) : base(testOutputHelper)
+    public ConstructBinaryTreeFromPreorderAndInorderTraversal_105(ITestOutputHelper testOutputHelper) : base(testOutputHelper)
     {
     }
 }
