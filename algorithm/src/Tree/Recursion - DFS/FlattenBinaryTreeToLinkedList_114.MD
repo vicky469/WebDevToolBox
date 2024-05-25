@@ -33,11 +33,11 @@ Assuming we have already flattened the left subtree and right subtree, how can w
 |            |           |                          | root.right = temp: 5          |
 
 1. Flatten the left subtree  
-   <img height="250" src="https://i.gyazo.com/083cb9ce3b899cab4576379bd4fa5185.png" width="600"/>
+   <img height="250" src="https://i.gyazo.com/6b13b0c0d57c0f5fa19490273d2cb8e6.png" width="600"/>
 
 2. Flatten the right subtree  
-   <img height="250" src="https://i.gyazo.com/836095ea0647306dd6db75eb0a9a776c.png" width="700"/>
+   <img height="250" src="https://i.gyazo.com/572b150c136d111c71b18615230c696a.png" width="700"/>
 3. Finally, connect the left subtree to the right subtree  
-<img height="250" src="https://i.gyazo.com/d5084bf67eb01848afb0b13f70254745.png" width="600"/>
+<img height="250" src="https://i.gyazo.com/ca040711988427366670c8a617685f7e.png" width="600"/>
 
 
