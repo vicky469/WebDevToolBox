@@ -40,4 +40,9 @@ Assuming we have already flattened the left subtree and right subtree, how can w
 3. Finally, connect the left subtree to the right subtree  
 <img height="250" src="https://i.gyazo.com/ca040711988427366670c8a617685f7e.png" width="600"/>
 
+Recursion action:
+1. Store the right subtree as a temp variable
+2. Make the left subtree to be the right subtree
+3. Connect the temp variable to the right subtree
 
+<img height="350" src="https://i.gyazo.com/124f3f0c6b5fad18a52e58b07b4154cf.png" width="600"/>
