@@ -11,7 +11,7 @@ Output: "PAHNAPLSIIGYIR"
 [PAHN]  
 [APLSIIG]    
 [YIR]  
-<img height="100" src="https://i.gyazo.com/fa97b207713267ebc5587687b47f2791.jpg" width="300"/>
+<img height="140" src="https://i.gyazo.com/fa97b207713267ebc5587687b47f2791.jpg"/>
 
 ---
 Input:
@@ -22,8 +22,8 @@ Output: "PINALSIGYAHRPI"
 [PIN]  
 [ALSIG]    
 [YAHR]  
-[PI]  
-<img height="100" src="https://i.gyazo.com/05195acadfb7e092ee1b3e3c09373183.jpg" width="300"/>
+[PI]
+<img height="160" src="https://i.gyazo.com/05195acadfb7e092ee1b3e3c09373183.jpg" />
 
 ### Finding patterns and constraints
 Column 
