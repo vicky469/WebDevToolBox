@@ -40,7 +40,7 @@ isDown = true;
 - If `isDown` is true, the next row is row + 1.
 - Else, the next row is row - 1.
 
-**<span style="color:red;">For this problem, we only care about row.</span>**
+**<span style="color:red;">For this problem, we only care about the row.</span>**
 
 pseudocode
 ```
