@@ -25,7 +25,7 @@ Output: "PINALSIGYAHRPI"
 [PI]
 <img height="160" src="https://i.gyazo.com/05195acadfb7e092ee1b3e3c09373183.jpg" />
 
-### Finding patterns and constraints
+### Finding Patterns and Constraints
 Column 
 - For each cycle, only the first column is attempting to be fully filled (except the last cycle).  
   Later columns can only have one element.
