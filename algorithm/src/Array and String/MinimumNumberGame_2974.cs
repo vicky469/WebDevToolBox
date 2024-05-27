@@ -1,4 +1,4 @@
-namespace LeetCode;
+namespace LeetCode.Array_and_String;
 
 public class MinimumNumberGame_2974
 {

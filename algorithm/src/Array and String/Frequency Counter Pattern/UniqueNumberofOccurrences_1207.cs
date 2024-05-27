@@ -1,4 +1,4 @@
-namespace LeetCode.array_and_string.Frequency_Counter_Pattern;
+namespace LeetCode.Array_and_String.Frequency_Counter_Pattern;
 
 public class UniqueNumberofOccurrences_1207
 {

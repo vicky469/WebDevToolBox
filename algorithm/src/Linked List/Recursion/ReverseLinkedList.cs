@@ -1,6 +1,6 @@
 using static LeetCode.Data_Structure.LinkedList<int>;
 
-namespace LeetCode.Recursion.Linked_List;
+namespace LeetCode.Linked_List.Recursion;
 public class ReverseLinkedList:TestBase
 {
     static Node<int> ReverselistRecursion(Node<int> head)

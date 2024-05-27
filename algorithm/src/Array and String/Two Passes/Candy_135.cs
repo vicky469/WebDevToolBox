@@ -1,4 +1,4 @@
-namespace LeetCode.Array_and_String.Greedy;
+namespace LeetCode.Array_and_String.Two_Passes;
 
 public class Candy_135
 {

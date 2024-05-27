@@ -1,4 +1,4 @@
-namespace LeetCode.array_and_string.String;
+namespace LeetCode.Array_and_String.String;
 
 public class ValidAnagram_242
 {

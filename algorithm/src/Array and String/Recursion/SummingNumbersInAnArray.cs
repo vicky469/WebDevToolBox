@@ -1,4 +1,4 @@
-namespace LeetCode.Recursion.Array_and_String;
+namespace LeetCode.Array_and_String.Recursion;
 
 public class SummingNumbersInAnArray: TestBase
 {

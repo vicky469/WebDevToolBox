@@ -1,4 +1,4 @@
-namespace LeetCode.Net;
+namespace LeetCode.NET;
 
 public class LearnDataTypes: TestBase
 {

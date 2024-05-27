@@ -1,7 +1,4 @@
-using System.Collections.Generic;
-using System.Linq;
-
-namespace LeetCode.Sliding_Window_Pattern;
+namespace LeetCode.Array_and_String.Sliding_Window_Pattern;
 // https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/
 public class MaximumSumOfDistinctSubarraysWithLengthK__2461
 {

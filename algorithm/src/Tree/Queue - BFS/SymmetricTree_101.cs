@@ -1,6 +1,8 @@
 // https://leetcode.com/problems/symmetric-tree/description/?envType=study-plan-v2&envId=top-interview-150
 
-namespace LeetCode.Tree;
+using LeetCode.Data_Structure;
+
+namespace LeetCode.Tree.Queue___BFS;
 
 public class SymmetricTree_101
 {

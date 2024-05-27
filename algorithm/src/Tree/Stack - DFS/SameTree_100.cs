@@ -1,11 +1,13 @@
-namespace LeetCode.Tree.Stack;
+using LeetCode.Data_Structure;
+
+namespace LeetCode.Tree.Stack___DFS;
 
 public class SameTree_100: TestBase
 {
     
     bool IsSameTree(TreeNode p, TreeNode q)
     {
-        var stack = new Stack<(TreeNode, TreeNode)>();
+        var stack = new System.Collections.Generic.Stack<(TreeNode, TreeNode)>();
         stack.Push((p, q));
         while (stack.Count > 0)
         {
@@ -24,7 +26,7 @@ public class SameTree_100: TestBase
     }
     bool IsSameTree_Log(TreeNode p, TreeNode q)
     {
-        var stack = new Stack<(TreeNode, TreeNode)>();
+        var stack = new System.Collections.Generic.Stack<(TreeNode, TreeNode)>();
         stack.Push((p, q));
         TestOutputHelper.WriteLine($"PUSH p: {p?.val}, q: {q?.val}");
         while (stack.Count > 0)

@@ -1,4 +1,4 @@
-namespace LeetCode.array_and_string;
+namespace LeetCode.Array_and_String.Two_Pointer;
 
 public class MergeSortedArray_88
 {

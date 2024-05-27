@@ -1,4 +1,4 @@
-namespace LeetCode.Array_and_String.HashTable;
+namespace LeetCode.Array_and_String;
 
 public class MajorityElement_169
 {

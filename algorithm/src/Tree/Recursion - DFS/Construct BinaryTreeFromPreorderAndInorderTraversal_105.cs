@@ -1,4 +1,7 @@
 // https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/
+
+using LeetCode.Data_Structure;
+
 namespace LeetCode.Tree.Recursion___DFS;
 
 //preorder and inorder consist of unique values.

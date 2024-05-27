@@ -1,4 +1,4 @@
-namespace LeetCode;
+namespace LeetCode.Mathmatics;
 
 public class RandomizedSet {
     HashSet<int> set;

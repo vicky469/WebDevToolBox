@@ -1,4 +1,4 @@
-namespace LeetCode;
+namespace LeetCode.Array_and_String.HashSet;
 
 public class MaximumSizeOfASetAfterRemovals_10037
 {

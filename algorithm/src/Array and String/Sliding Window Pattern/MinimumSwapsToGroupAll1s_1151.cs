@@ -1,6 +1,4 @@
-using System.Linq;
-
-namespace LeetCode.Sliding_Window_Pattern;
+namespace LeetCode.Array_and_String.Sliding_Window_Pattern;
 
 public class MinimumSwapsToGroupAll1s_1151
 {

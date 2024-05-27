@@ -1,6 +1,4 @@
-using System;
-
-namespace LeetCode;
+namespace LeetCode.Util;
 
 public class Templdate : TestBase
 {

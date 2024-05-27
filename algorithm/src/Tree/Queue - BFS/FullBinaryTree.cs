@@ -1,4 +1,6 @@
-namespace LeetCode.Tree;
+using LeetCode.Data_Structure;
+
+namespace LeetCode.Tree.Queue___BFS;
 
 // either zero or two children for each node
 public class FullBinaryTree

@@ -1,6 +1,8 @@
 // https://leetcode.com/problems/binary-tree-inorder-traversal/description/
 
-namespace LeetCode.Recursion.Tree;
+using LeetCode.Data_Structure;
+
+namespace LeetCode.Tree;
 public class Inorder_94
 {
     //    1                      

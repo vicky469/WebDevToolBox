@@ -1,3 +1,5 @@
+using LeetCode.Data_Structure;
+
 namespace LeetCode.Tree.Queue___BFS;
 
 public class PopulatingNextRightPointersInEachNodeII_117: TestBase

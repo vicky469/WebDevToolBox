@@ -1,4 +1,6 @@
-namespace LeetCode.Stack;
+using LeetCode.Data_Structure;
+
+namespace LeetCode.Tree.Stack___DFS;
 
 public class MaximumDepthOfBinaryTree_104
 {

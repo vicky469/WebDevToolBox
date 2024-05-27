@@ -1,4 +1,4 @@
-namespace LeetCode.Recursion.Array_and_String;
+namespace LeetCode.Array_and_String.Recursion;
 // https://leetcode.com/problems/power-of-two/description/
 public class PowerOfTwo_231
 {

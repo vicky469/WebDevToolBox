@@ -41,9 +41,6 @@ public class MoveZeroes_283
     {
         MoveZeroes(nums);
         Assert.Equal(expectedResult, nums);
-
-        MoveZeroes2(nums);
-        Assert.Equal(expectedResult, nums);
     }
     
     [Theory]

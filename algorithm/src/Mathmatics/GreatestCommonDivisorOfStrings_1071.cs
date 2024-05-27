@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace LeetCode;
+namespace LeetCode.Mathmatics;
 
 /**
  * https://leetcode.com/problems/greatest-common-divisor-of-strings/

@@ -1,4 +1,4 @@
-namespace LeetCode.Tree;
+namespace LeetCode.Data_Structure;
 
 public class TreeNode {
     public int val;

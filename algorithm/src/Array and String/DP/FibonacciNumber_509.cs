@@ -1,6 +1,4 @@
-using System.Linq;
-
-namespace LeetCode.Recursion.DP;
+namespace LeetCode.Array_and_String.DP;
 
 public class FibonacciNumber_509
 {

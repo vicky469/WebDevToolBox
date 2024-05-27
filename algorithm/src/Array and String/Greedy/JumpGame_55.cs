@@ -1,4 +1,4 @@
-namespace LeetCode.Array_and_String.DP;
+namespace LeetCode.Array_and_String.Greedy;
 
 public class JumpGame_55
 {

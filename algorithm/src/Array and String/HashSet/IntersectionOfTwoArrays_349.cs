@@ -1,4 +1,4 @@
-namespace LeetCode.array_and_string.HashSet;
+namespace LeetCode.Array_and_String.HashSet;
 
 public class IntersectionOfTwoArrays_349
 {

@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/symmetric-tree/description/?envType=study-plan-v2&envId=top-interview-150
 
+using LeetCode.Data_Structure;
+
 namespace LeetCode.Tree.Recursion___DFS;
 
 public class SymmetricTree_101

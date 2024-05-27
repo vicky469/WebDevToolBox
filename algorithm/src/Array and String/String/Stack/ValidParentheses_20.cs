@@ -1,6 +1,4 @@
-using LeetCode.Util;
-
-namespace LeetCode.Stack;
+namespace LeetCode.Array_and_String.String.Stack;
 
 public class ValidParentheses_20
 {

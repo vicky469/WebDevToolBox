@@ -1,4 +1,4 @@
-namespace LeetCode.array_and_string.Two_Pointer;
+namespace LeetCode.Array_and_String.Two_Pointer;
 
 public class RemoveElement_27
 {
