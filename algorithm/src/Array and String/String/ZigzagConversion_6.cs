@@ -2,7 +2,7 @@ using System.Text;
 
 namespace LeetCode.Array_and_String.String;
 // #string_manipulation
-// up and down
+// go up and down
 public class ZigzagConversion_6
 {
     string Convert(string s, int numRows) {
