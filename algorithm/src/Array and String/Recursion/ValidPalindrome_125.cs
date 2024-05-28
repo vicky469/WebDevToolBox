@@ -1,18 +1,7 @@
 namespace LeetCode.Array_and_String.Recursion;
 
-public class IsPalindrome_125:TestBase
+public class ValidPalindrome_125:TestBase
 {
-    // simplified
-    static bool IsPalindromeRecursionSimplied(string s)
-    {
-        if (s == null) return false;
-        if (s == string.Empty || s.Length == 1) return true;
-        s = s.ToLower();
-        if (s[0] != s[s.Length - 1]) return false;
-        return IsPalindromeRecursionSimplied(s.Substring(1, s.Length - 2));
-    }
-    
-    // full
     static bool IsPalindromeRecursion(string s)
     {
         s = s.ToLower();
@@ -26,13 +15,12 @@ public class IsPalindrome_125:TestBase
         {
             return true;
         }
-
+        var head = s[0];
+        var tail = s[s.Length - 1];
+        
+        if (head != tail) return false;
         // keep shrinking, delete head and tail
-        char head = s[0];
-        string middle = s.Substring(1, s.Length - 2);
-        char tail = s[s.Length - 1];
-
-        return head == tail && IsPalindromeHelper(middle);
+        return IsPalindromeHelper(s.Substring(1, s.Length - 2));
     }
 
     [Theory]
@@ -47,14 +35,13 @@ public class IsPalindrome_125:TestBase
     [InlineData("race a car",false)]
     [InlineData("race car",true)]
     [InlineData("A man, a plan, a canal: Panama",true)]
-    
     private void Test_OK(string s, bool expectedResult)
     {
         var res = IsPalindromeRecursion(s);
         Assert.Equal(expectedResult, res);
     }
 
-    public IsPalindrome_125(ITestOutputHelper testOutputHelper) : base(testOutputHelper)
+    public ValidPalindrome_125(ITestOutputHelper testOutputHelper) : base(testOutputHelper)
     {
     }
 }
