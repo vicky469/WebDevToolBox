@@ -16,7 +16,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="resources\" />
       <Folder Include="src\.NET\Linq\" />
       <Folder Include="src\Array and String\Matrix\" />
       <Folder Include="src\Tree\Tire\" />
@@ -26,14 +25,17 @@
         <Compile Remove="obj\**" />
         <Compile Include="src\.NET\DataTypes.cs" />
         <Compile Include="src\.NET\Enumerable.cs" />
+        <Compile Remove="resources\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="obj\**" />
+      <EmbeddedResource Remove="resources\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="obj\**" />
+      <None Remove="resources\**" />
     </ItemGroup>
 
 </Project>
