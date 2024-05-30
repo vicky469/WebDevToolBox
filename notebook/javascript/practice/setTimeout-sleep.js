@@ -1,0 +1,1 @@
+// create a sleep function in JavaScript => use the Promise, await and async functions in conjunction with setTimeout().
