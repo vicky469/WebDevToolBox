@@ -14,8 +14,13 @@ If you go to a network, you have to do TCP connection to a different server, eve
 
 ![Image](https://i.gyazo.com/27384cd38551b0a39557d29ab1b9c993.png)
 
-So you can't do nothing and have to be multi-threaded. Is this the best that can be done?
+So you can't do nothing while waiting.
+There are two solutions to address this issue:
 
+1. operating system threads
+1. event notification system
+
+Let's look at the multi-threaded solution.
 A look at two popular web servers - Apache and NGINX and see how they are doing IO.
 What to measure?
 
@@ -37,10 +42,12 @@ You could have the code like this where you make the query to the database, inst
 
 When the request comes back, millions and millions of clock cycles later, you can execute the callback. There is no machinery involved in this all your need is a pointer to that callback.
 
-### Can NOT use threads for each connection
+### Is this the best that can be done?
+
+Can NOT use threads for each connection.
 
 Right way to do is to use a single thread and an event loop.
 
-References:
-[1] https://www.youtube.com/watch?v=EeYvFl7li9E&ab_channel=JSConf - 2012
+References:  
+[1] https://www.youtube.com/watch?v=EeYvFl7li9E&ab_channel=JSConf - 2012  
 [2] https://github.com/martynsmith/node-irc
