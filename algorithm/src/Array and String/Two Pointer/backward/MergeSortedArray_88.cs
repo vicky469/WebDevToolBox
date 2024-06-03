@@ -2,7 +2,7 @@ namespace LeetCode.Array_and_String.Two_Pointer;
 
 public class MergeSortedArray_88
 {
-    void Merge(int[] nums1, int m, int[] nums2, int n)
+    private void Merge(int[] nums1, int m, int[] nums2, int n)
     {
         // starting backwards, add the largest element and
         // the next largest element and so on at the end of nums1

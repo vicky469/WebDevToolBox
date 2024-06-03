@@ -4,7 +4,7 @@ namespace LeetCode.Array_and_String.Two_Pointer;
 // should keep the same order
 public class RemoveDuplicatesFromSortedArray_26
 {
-    int RemoveDuplicates(int[] nums)
+    private int RemoveDuplicates(int[] nums)
     {
         if (nums.Length == 0) return 0;
 

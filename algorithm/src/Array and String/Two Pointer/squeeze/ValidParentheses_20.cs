@@ -9,34 +9,36 @@ public class ValidParentheses_20
     //     2. Open brackets must be closed in the correct order.
     //     3. Every close bracket has a corresponding open bracket of the same type.
     // Constraints: s consists of parentheses only '()[]{}'.
-    public bool IsValid(string s) {
-        if(s.Length % 2 != 0) return false;
+    public bool IsValid(string s)
+    {
+        if (s.Length % 2 != 0) return false;
         var parts = s.Select(c => c).ToArray();
-        var partsMapping = new Dictionary<char, char>()
+        var partsMapping = new Dictionary<char, char>
         {
-            {'(', ')'},
-            {'[', ']'},
-            {'{', '}'}
+            { '(', ')' },
+            { '[', ']' },
+            { '{', '}' }
         };
-        var start = 0; 
+        var start = 0;
         var end = 1;
-        while(end < partsMapping.Count){
-            if(partsMapping.ContainsKey(parts[end]))
+        while (end < partsMapping.Count)
+            if (partsMapping.ContainsKey(parts[end]))
             {
-                start++; end++;
+                start++;
+                end++;
             }
             else
             {
                 var startVal = partsMapping.TryGetValueByKey(parts[start]);
                 if (startVal != parts[end]) return false;
-                if( start == 0 && startVal == parts[end]) return true;
-                start--; end++;
+                if (start == 0 && startVal == parts[end]) return true;
+                start--;
+                end++;
             }
-        }
-        
+
         return true;
     }
-    
+
     [Theory]
     [InlineData("()", true)]
     [InlineData("()[]{}", true)]
