@@ -17,7 +17,6 @@
 
     <ItemGroup>
       <Folder Include="src\.NET\Linq\" />
-      <Folder Include="src\Array and String\Matrix\" />
       <Folder Include="src\Array and String\Sliding Window\fixed size\" />
       <Folder Include="src\Tree\Tire\" />
     </ItemGroup>
