@@ -1,5 +1,3 @@
-using System.Text;
-
 namespace LeetCode.Array_and_String.HashTable;
 
 public class IntegerToRoman_12: TestBase

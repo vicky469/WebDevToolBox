@@ -1,5 +1,3 @@
-using System.Text;
-
 namespace LeetCode.Array_and_String.String;
 // #string_manipulation
 // go up and down
