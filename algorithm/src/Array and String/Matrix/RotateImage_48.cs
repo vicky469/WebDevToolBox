@@ -2,6 +2,31 @@ namespace LeetCode.Array_and_String.Matrix;
 
 public class RotateImage_48: TestBase
 {
+    void Rotate_Practice(int[][] matrix) {
+        TestOutputHelper.WriteLine("Input");
+        Print2DArray(matrix);
+        //transpose
+        for(var i = 0; i < matrix.Length; i++){
+            for(var j = i; j < matrix[0]. Length; j++){
+                (matrix[i][j],matrix[j][i])=(matrix[j][i], matrix[i][j]);
+            }
+        }
+        TestOutputHelper.WriteLine("After transpose");
+        Print2DArray(matrix);
+        TestOutputHelper.WriteLine("After revert row by row");
+        Print2DArray(matrix);
+        
+        // revert row by row
+        for(var i = 0; i < matrix.Length; i++){
+            for(var j = 0; j < matrix[0].Length/2; j++){
+                var tmp = matrix[i][j];
+                matrix[i][j] = matrix[i][matrix[0].Length-1-j];
+                matrix[i][matrix[0].Length-1-j] = tmp;
+            }
+        }
+    }
+    
+    
     void Rotate(int[][] matrix) {
         var n = matrix.Length;
 
@@ -15,7 +40,7 @@ public class RotateImage_48: TestBase
         // Reverse each row
         for (var i = 0; i < n; i++) {
             for (var j = 0; j < n / 2; j++) {
-                (matrix[i][j], matrix[i][n - j - 1]) = (matrix[i][n - j - 1], matrix[i][j]);
+                (matrix[i][j], matrix[i][n - j - 1]) = (matrix[i][n - j - 1], matrix[i][j]); // remember to -j
             }
         }
     }
@@ -32,31 +57,14 @@ public class RotateImage_48: TestBase
             }
         }
     }
-    void Rotate_Comment(int[][] matrix) {
-        var n = matrix.Length;
-        // n/2 is the number of layers
-        for (var i = 0; i < n / 2; i++)
-        {
-            for (var j = i; j < n - i - 1; j++)
-            {
-                var temp = matrix[i][j];
-                TestOutputHelper.WriteLine($"i: {i}, j: {j}, temp: {temp}");
-                matrix[i][j] = matrix[n - j - 1][i]; // top left = bottom left
-                TestOutputHelper.WriteLine($"matrix[{i}][{j}] = matrix[{n - j - 1}][{i}]");
-                matrix[n - j - 1][i] = matrix[n - i - 1][n - j - 1]; // bottom left = bottom right
-                TestOutputHelper.WriteLine($"matrix[{n - j - 1}][{i}] = matrix[{n - i - 1}][{n - j - 1}]");
-                matrix[n - i - 1][n - j - 1] = matrix[j][n - i - 1]; // bottom right = top right
-                TestOutputHelper.WriteLine($"matrix[{n - i - 1}][{n - j - 1}] = matrix[{j}][{n - i - 1}]");
-                matrix[j][n - i - 1] = temp; // top right = top left
-                TestOutputHelper.WriteLine($"matrix[{j}][{n - i - 1}] = {temp}");
-            }
-        }
-    }
+    
+    
     [Theory]
     [MemberData(nameof(TestRotateData))]
     public void Test_Rotate(int[][] input, int[][] expected)
     {
-        Rotate(input);
+        //Rotate(input);
+        Rotate_Practice(input);
         Assert.Equal(expected, input);
     }
     
@@ -65,12 +73,27 @@ public class RotateImage_48: TestBase
         {
             new object[]
             {
-                new int[][] { new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } },
-                new int[][] { new int[] { 7, 4, 1 }, new int[] { 8, 5, 2 }, new int[] { 9, 6, 3 }} 
+                new int[][] { new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } }, // input
+                new int[][] { new int[] { 7, 4, 1 }, new int[] { 8, 5, 2 }, new int[] { 9, 6, 3 }}  // expected
+            },
+            new object[]
+            {
+                new int[][] { new int[] { 5, 1, 9, 11 }, new int[] { 2, 4, 8, 10 }, new int[] { 13, 3, 6, 7 }, new int[] { 15, 14, 12, 16 } },
+                new int[][] { new int[] { 15, 13, 2, 5 }, new int[] { 14, 3, 4, 1 }, new int[] { 12, 6, 8, 9 }, new int[] { 16, 7, 10, 11 }}
             }
         };
 
     public RotateImage_48(ITestOutputHelper testOutputHelper) : base(testOutputHelper)
     {
+    }
+    
+    void Print2DArray(int[][] matrix) {
+        for (int i = 0; i < matrix.Length; i++) {
+            var sb = new StringBuilder();
+            for (int j = 0; j < matrix[i].Length; j++) {
+                sb.Append(matrix[i][j] + ", ");
+            }
+            TestOutputHelper.WriteLine(sb.ToString());
+        }
     }
 }
