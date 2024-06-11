@@ -15,7 +15,6 @@ public class GroupAnagrams_49: TestBase
                 cnt[c-'a']++;
             }
             var key = string.Join(',', cnt);
-            TestOutputHelper.WriteLine($"Key for {str} is {key}");
             if(map.ContainsKey(key)){
                 map[key].Add(str);
             }else{

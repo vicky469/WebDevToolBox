@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "algorithm", "algorithm\algorithm.csproj", "{A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLApi", "GraphQLApi\GraphQLApi.csproj", "{1930B3DE-36E8-4631-ADFF-9C50D0455129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLApiClient", "GraphQLApiClient\GraphQLApiClient.csproj", "{76020BB2-8A0C-41DE-8D33-4C38A3647DBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0342FDA-DB08-4A7E-8E05-1EE8DB0EE7B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1930B3DE-36E8-4631-ADFF-9C50D0455129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1930B3DE-36E8-4631-ADFF-9C50D0455129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1930B3DE-36E8-4631-ADFF-9C50D0455129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1930B3DE-36E8-4631-ADFF-9C50D0455129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76020BB2-8A0C-41DE-8D33-4C38A3647DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76020BB2-8A0C-41DE-8D33-4C38A3647DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76020BB2-8A0C-41DE-8D33-4C38A3647DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76020BB2-8A0C-41DE-8D33-4C38A3647DBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
