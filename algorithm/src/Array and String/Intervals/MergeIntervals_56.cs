@@ -46,6 +46,11 @@ public class MergeIntervals_56
             {
                 new int[][]{new int[]{1,4}, new int[]{4,5}},
                 new int[][]{new int[]{1,5}}
-            }
+            },
+            new object[]
+            {
+                new int[][]{new int[]{2,3}, new int[]{4,5}, new int[]{6,7}, new int[]{8,9} ,new int[]{1,10}},
+                new int[][]{new int[]{1,10}}
+            },
         };
 }
