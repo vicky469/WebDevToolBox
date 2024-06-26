@@ -6,7 +6,7 @@ public class MinimumNumberOfArrowsToBurstBalloons_452
     {
         if (points.Length == 0) return 0;
         // Sort by end point
-        Array.Sort(points, (a, b) => a[1] - b[1]);
+        Array.Sort(points, (a, b) => a[1].CompareTo(b[1])); // ❗ don't use a[1] - b[1] because it will cause overflow
         var arrows = 1;
         var arrowPos = points[0][1]; // end of the first interval
 
@@ -51,6 +51,11 @@ public class MinimumNumberOfArrowsToBurstBalloons_452
             yield return new object[]
             {
                 new int[][] { new int[] { 1, 2 }, new int[] { 2, 3 }, new int[] { 3, 4 }, new int[] { 4, 5 } },
+                2
+            };
+            yield return new object[]
+            {
+                new int[][] { new int[] { -2147483646,-2147483645}, new int[] { 2147483646,2147483647 } },
                 2
             };
         }
