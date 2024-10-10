@@ -1,0 +1,1 @@
+often used for problems involving intervals or ranges,
